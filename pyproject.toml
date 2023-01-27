@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dbt-development"
+version = "0.1.0"
+description = "dbt athena development"
+authors = ["Avinash-1394 <43074786+Avinash-1394@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "dbt_development"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dbt-core = "1.3.2"
+dbt-athena-community = { path = "../dbt-athena"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

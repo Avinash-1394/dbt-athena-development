@@ -1,0 +1,17 @@
+
+    
+    
+    
+    create external table analytics_dev.employment_indicators_november_2022_csv_tables (Series_reference string, Period double, Data_value integer, Suppressed integer)
+    stored as parquet
+    location 's3://dbt-athena/analytics_dev/employment_indicators_november_2022_csv_tables/539f6e7c-6478-442d-86e7-2396de4696b8'
+    tblproperties ('classification'='parquet')
+  ;
+    -- dbt seed --
+    
+          insert into analytics_dev.employment_indicators_november_2022_csv_tables (Series_reference, Period, Data_value, Suppressed) values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)
+      
+
+;
+  
