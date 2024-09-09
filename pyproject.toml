@@ -1,15 +1,18 @@
 [tool.poetry]
-name = "dbt-development"
+name = "dbt-athena-development"
 version = "0.1.0"
 description = "dbt athena development"
 authors = ["Avinash-1394 <43074786+Avinash-1394@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "dbt_development"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-dbt-core = "1.4.1"
-dbt-athena-community = { path = "../dbt-athena"}
+python = ">=3.8,<3.13"
+dbt-core = "1.8.6"
+dbt-common = "1.7.0"
+dbt-adapters = "1.4.1"
+dbt-semantic-interfaces = "0.5.1"
+dbt-tests-adapter = "1.9.2"
+dbt-athena-community = { path = "../dbt-athena-1"}
 
 
 [build-system]

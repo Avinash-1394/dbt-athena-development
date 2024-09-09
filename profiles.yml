@@ -1,0 +1,14 @@
+analytics_dev:
+  target: dev
+  outputs:
+    dev:
+      type: athena
+      s3_staging_dir: s3://avinash1394-athena-query-results/dbt/
+      s3_data_dir: s3://608963181271-us-east-1-athena-results-bucket-n3y5og9g2s/dbt/
+      s3_data_naming: schema_table
+      s3_tmp_table_dir: s3://608963181271-us-east-1-athena-results-bucket-n3y5og9g2s/dbt/temp/
+      region_name: us-east-1
+      schema: analytics_dev
+      database: awsdatacatalog
+      threads: 4
+      work_group: primary

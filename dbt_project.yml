@@ -14,5 +14,16 @@ clean-targets:
     - "dbt_modules"
     - "logs"
 
+flags:
+  send_anonymous_usage_stats: true
+  use_colors: true
+  partial_parse: true
+  write_json: true
+  warn_error: true
+  log_format: default
+  debug: true
+  fail_fast: true
+  use_experimental_parser: true
+
 
 profile: analytics_dev
